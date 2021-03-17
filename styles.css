@@ -1,0 +1,55 @@
+/************ HTML & CSS 10.2 ************/
+:root {
+    --bubble-heigth: 80px;
+}
+#talkbubble {
+    position: relative;
+    left: 100px;
+    width: calc(3/2 * var(--bubble-heigth));
+    height: var(--bubble-heigth);
+    background-color: #D84282;
+    border-radius: calc(1/10 * var(--bubble-heigth));
+}
+
+#talkbubble::before {
+    position: absolute;
+    left: calc(-1/4 * var(--bubble-heigth));
+    top: calc(1/3 * var(--bubble-heigth));26px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: calc(1/6 * var(--bubble-heigth)) solid transparent;
+    border-right: calc(1/4 * var(--bubble-heigth)) solid #D84282;
+    border-bottom: calc(1/6 * var(--bubble-heigth)) solid transparent;
+    z-index: 1;
+}
+/************ HTML & CSS 10.2 ************/
+#gestreepte-link,
+#gestreepte-link:link,
+#gestreepte-link:visited {
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    color: #D84282;
+    text-decoration: none;
+}
+
+/* BEGIN STAAT */
+#gestreepte-link::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #D8428200;
+    transition: background-color 1000ms ease-in-out;
+}
+
+/* EIND STAAT */
+#gestreepte-link:hover::after {
+    /* alle andere properties worden behouden, we overschrijven alleen de width property */
+    background-color: #D84282FF;
+    /*width: 100%;*/
+}
+/************ HTML & CSS 10.5 ************/
+<div id="menu"></div>
+/************   ************/

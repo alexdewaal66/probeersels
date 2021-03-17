@@ -1,0 +1,18 @@
+:root {
+    --burger-color: #D84282;
+    --burger-bar-height: 5px;
+}
+#menu {
+    width: calc(8 * var(--burger-bar-height));
+    height: var(--burger-bar-height);
+    border-width: var(--burger-bar-height);
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--burger-color);
+    background-color: var(--burger-color);
+    background-clip: content-box;
+    padding-top: var(--burger-bar-height);
+    padding-bottom: var(--burger-bar-height);
+    margin: calc(2 * var(--burger-bar-height));
+}

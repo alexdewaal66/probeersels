@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<h1>Calculator</h1>
+<h2>Uses Spring Boot and Exp4J to process the form</h2>
+<form action="http://localhost:8080/calculator">
+    <p>
+        <label for="f1">formula1:</label>
+        <input type="text" id="f1" name="formula1" placeholder="1+2-3*4/5"/>
+    </p>
+    <p>
+        <label for="f2">formula2:</label>
+        <input type="text" id="f2" name="formula2"/>
+    </p>
+    <p>
+        <label for="f3">formula3:</label>
+        <input type="text" id="f3" name="formula3"/>
+    </p>
+    <button type="submit">Calc!</button>
+    <button type="submit" formaction="http://localhost:8080/calculators" formmethod="post">Calculate All!</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+/************ HTML & CSS  9.X geïnspireerd ************/
+:root {
+    --color1: red;
+    --color2: lawngreen;
+    --size-style: 20px solid;
+    --transparent: var(--size-style) transparent;
+}
+
+#triangles {
+    font-size: 0px;
+}
+
+.row {
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.even {
+    border-left: var(--size-style) var(--color2);
+    border-right: var(--size-style) var(--color2);
+    border-bottom: var(--size-style) var(--color1);
+}
+
+.odd {
+    border-top: var(--size-style) var(--color1);
+    border-left: var(--size-style) var(--color2);
+    border-right: var(--size-style) var(--color2);
+}
+
+.leftmost {
+    border-left: var(--transparent);
+}
+
+.rightmost {
+    border-right: var(--transparent);
+}
+
+.odd.blank {
+    border-top: var(--transparent);
+}
+
+.even.blank {
+    border-bottom: var(--transparent);
+}
+
+.odd.fullblank {
+    border-top: var(--transparent);
+    border-left: var(--transparent);
+    border-right: var(--transparent);
+}
+
+.even.fullblank {
+    border-bottom: var(--transparent);
+    border-left: var(--transparent);
+    border-right: var(--transparent);
+}
+
